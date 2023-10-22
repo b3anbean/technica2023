@@ -1,0 +1,139 @@
+/*
+EDEDE9
+D6CCC2 - darker beige 
+F5EBE0 - lighter beige 
+E3D5CA
+D5BDAF
+*/
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, Times New Roman, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #D6CCC2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  float: left;
+  font-size: 1.2em;
+  color: black;
+  text-align: center;
+  padding: 1.2vw 1.4vw;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #F5EBE0;
+  color: black;
+}
+
+.categoryHeaders {
+  text-align: left;
+  font-family: Lucida Handwriting;
+  transform: translate(0, 50%);
+}
+
+.garment {
+  display: flex;
+} 
+
+*.garmentimg {
+  width: 30%;
+  height: 50%vw;
+  margin: .15vw;
+}
+
+.garmentimg img {
+  width: 100%;
+  height: 100%;
+}
+
+.alternatives {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+/* gallery snap */
+article {
+  /* overflow: scroll; */
+
+  scroll-snap-type: y mandatory;
+  /* Reserve space for header and additional space so above page are visible a bit*/
+  scroll-padding-top: calc(var(--bar-height) + var(--extra-space));
+
+  /* position: absolute; */
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--bar-height) 0 0 0;
+
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 2px black solid;
+  font-size: 36px;
+}
+
+section.large {
+  height: 100vh;
+}
+
+.allgarments {
+  margin: 1vw 4vw;
+  display: flex;
+  align-items: center;
+}
+
+.garmentcontainer {
+  padding: 5vw;
+  margin: 1vw;
+}
+.garmentcontainer img {
+  justify-content: center;
+  max-width: 50%;
+  max-height: 50%;
+  padding: 5vw;
+  margin: 1vw;
+}
+
+.b1 {
+  background-color: #D6CCC2;
+}
+
+.b2 {
+  background-color: #e0cddd;
+}
+
+.b3 {
+  background-color: #F5EBE0;
+}
+
+.garmentinfo {
+  padding: 2vw;
+}
+
+.garmentinfo h4, h5, h6 {
+  padding: 0;
+  margin: .5vw;
+}
